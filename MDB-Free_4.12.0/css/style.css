@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* font-family: 'Raleway', sans-serif; */
+
+.btn-hover-warning:hover {
+  color: #212529 !important;
+  background-color: #fb3 !important;
+  border-color: #fb3 !important;
+}
+
+@media screen and (max-width: 992px) {
+    .brand-bar {
+        text-align: center;
+    }
+}
+
+  
+
