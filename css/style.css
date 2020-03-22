@@ -68,40 +68,5 @@ ul {
   background-color: #ffffff;
 }
 
-.coments {
-  width: 270px;
-  height: 125px;
-  padding: 5px 10px;
-  background-color: #f5f5f5;
-  border-radius: 5px;
-}
-
-.coments-arrow {
-  background-color: #f5f5f5;
-  width: 20px;
-  height: 20px;
-  margin-left: 25px;
-  margin-top: -10px;
-  transform: rotate(45deg);
-}
-
-.coments-photo {
-  width: 270px;
-  display: flex;
-  margin-top: 10px;
-}
-
-.custom-bg {
-  background-color: rgba(0,0,0,0.7);
-  background-blend-mode: darken;
-  background-image: url(/MDB-Free_4.12.0/img/u25_state0.jpg);
-  height: 324px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.8);
-}
-
 
 
