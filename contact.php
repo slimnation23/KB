@@ -1,76 +1,35 @@
+
+<meta charset="utf-8"> 
 <?php
+$urok="���� 22";
+error_reporting( E_ERROR );   //���������� �������������� � �������� (warning � notice) �� �����
+// �������� ���������� �� ����� �����		
+if (isset($_POST['name1']))			{$name1			= $_POST['name1'];		if ($name1 == '')	{unset($name1);}}
+if (isset($_POST['email1']))		{$email1		= $_POST['email1'];		if ($email1 == '')	{unset($email1);}}
+if (isset($_POST['text']))			{$text			= $_POST['text'];		if ($text == '')	{unset($text);}}
+if (isset($_POST['sab']))			{$sab			= $_POST['sab'];		if ($sab == '')		{unset($sab);}}
+//�������� ����������� ������ �� ����� �����
+if (isset($name1) ) {
+$name1=stripslashes($name1);
+$name1=htmlspecialchars($name1);
+}
+if (isset($email1) ) {
+$email1=stripslashes($email1);
+$email1=htmlspecialchars($email1);
+}
+if (isset($text) ) {
+$text=stripslashes($text);
+$text=htmlspecialchars($text);
+}
+// ����� ����� ���� ������ ������
+$address="slimnation2@gmail.com";
+// ����� ������ 
+$note_text="���� : $urok \r\n��� : $name1 \r\n Email : $email1 \r\n �������������� ���������� : $text";
 
-$post = (!empty($_POST)) ? true : false;
-
-if($post)
-{
-$email = trim($_POST['email']);
-$name = htmlspecialchars($_POST['name']);
-$email = htmlspecialchars($_POST['email']);
-$message = htmlspecialchars($_POST['message']);
-$tel = htmlspecialchars($_POST["tel"]);
-$error = '';
-
-if(!$name)
-{
-$error .= 'Пожалуйста введите ваше имя<br />';
+if (isset($name1)  &&  isset ($sab) ) {
+mail($address,$urok,$note_text,"Content-type:text/plain; windows-1251"); 
+// ��������� ����� �������� �����
+echo "<p style='color:#009900;'>���������(��) <b>$name1</b> ���� ������ ����������� �������. <br> �������. <br>��� ����� ������� �� ����� <b> $email1</b>.</p>";
 }
 
-// Проверка телефона
-function ValidateTel($valueTel)
-{
-$regexTel = "/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/";
-if($valueTel == "") {
-return false;
-} else {
-$string = preg_replace($regexTel, "", $valueTel);
-}
-return empty($string) ? true : false;
-}
-if(!$email)
-{
-$error .= "Пожалуйста введите email<br />";
-}
-if($email && !ValidateTel($email))
-{
-$error .= "Введите корректный email<br />";
-}
-if(!$error)
-
-// (length)
-if(!$message || strlen($message) < 1)
-{
-$error .= "Введите ваше сообщение<br />";
-}
-if(!$error)
-{
-
-
-$name_tema = "=?utf-8?b?". base64_encode($name) ."?=";
-
-$subject ="Новая заявка с сайта slimnation23.github.io/agency";
-$subject1 = "=?utf-8?b?". base64_encode($subject) ."?=";
-/*
-$message ="\n\nСообщение: ".$message."\n\nИмя: " .$name."\n\nТелефон: ".$tel."\n\n";
-*/
-$message1 ="\n\nИмя: ".$name."\n\nТелефон: " .$tel."\n\nE-mail: " .$email."\n\nСообщение: ".$message."\n\n";	
-
-
-$header = "Content-Type: text/plain; charset=utf-8\n";
-
-$header .= "From: Новая заявка <slimnation2@gmail.com>\n\n";	
-$mail = mail("slimnation2@gmail.com", $subject1, iconv ('utf-8', 'windows-1251', $message1), iconv ('utf-8', 'windows-1251', $header));
-
-if($mail)
-{
-echo 'OK';
-}
-
-}
-else
-{
-echo '<div class="notification_error">'.$error.'</div>';
-}
-
-}
 ?>

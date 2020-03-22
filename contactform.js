@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
     
     $.ajax({
     type: "POST",
-    url: "http://slimnation23.github.io/agency/contact.php",
+    url: "https://slimnation23.github.io/agency/contact.php",
     data: str,
     success: function(msg) {
     if(msg == 'OK') {
