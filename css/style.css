@@ -19,6 +19,31 @@ ul {
   margin-bottom: 0;
 }
 
+.headerBg {
+  background-image: url(/img/headerImg.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .header-content {
+    margin-top: 100px;
+}
+.headerBg {
+  height: auto;
+}
+.tab {
+  height: 50px !important;
+}
+}
+
+.tab {
+  width: 112px;
+  height: 112px;
+  margin: .1rem;
+}
+
 .btn-hover-warning:hover {
   color: #212529 !important;
   background-color: #fb3 !important;
@@ -31,40 +56,50 @@ ul {
     }
 }
 
+.prising-group {
+  margin-top: 3rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .pricing {
-  width: 350px;
+  width: 15rem;
   height: 459px;
   background-color: #333333;
+  margin-bottom: 2rem;
 }
 
 .pricing-popular {
-  width: 350px;
+  width: 15rem;
   height: 494px;
   background-color: #333333;
+  margin-bottom: 2rem;
 }
 
 .pricing-line-top {
   height: 1px;
-  width: 350px;
+  width: 15rem;
   background-color: rgba(124, 124, 124, 0.603);
 }
 
 .pricing-line-down {
   height: 4px;
-  width: 350px;
+  width: 15rem;
   background-color: #fb3
 }
 
 .pricing-line-down-popular {
   height: 39px;
-  width: 350px;
+  width: 15rem;
   color: #ffffff;
   background-color: #fb3;
   text-transform: uppercase;
 }
 
 .pricing-list {
-  width: 350px;
+  width: 15rem;
   background-color: #ffffff;
 }
 
