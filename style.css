@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  li {
+    list-style-type: none;
+    line-height: 36px;
+  }
+  
+  li:hover {
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+    cursor: pointer;
+  }
+  
+  ul {
+    margin-bottom: 0;
+  }
+  
+  .headerBg {
+    background-image: url(/img/headerImg.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 767px) {
+    .header-content {
+      margin-top: 100px;
+  }
+  .headerBg {
+    height: auto;
+  }
+  .tab {
+    height: 50px !important;
+  }
+  }
+  
+  .tab {
+    width: 112px;
+    height: 112px;
+    margin: .1rem;
+  }
+  
+  .btn-hover-warning:hover {
+    color: #212529 !important;
+    background-color: #fb3 !important;
+    border-color: #fb3 !important;
+  }
+  
+  @media screen and (max-width: 992px) {
+      .brand-bar {
+          text-align: center;
+      }
+  }
+  
+  .prising-group {
+    margin-top: 3rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .pricing {
+    width: 15rem;
+    height: 459px;
+    background-color: #333333;
+    margin-bottom: 2rem;
+  }
+  
+  .pricing-popular {
+    width: 15rem;
+    height: 494px;
+    background-color: #333333;
+    margin-bottom: 2rem;
+  }
+  
+  .pricing-line-top {
+    height: 1px;
+    width: 15rem;
+    background-color: rgba(124, 124, 124, 0.603);
+  }
+  
+  .pricing-line-down {
+    height: 4px;
+    width: 15rem;
+    background-color: #fb3
+  }
+  
+  .pricing-line-down-popular {
+    height: 39px;
+    width: 15rem;
+    color: #ffffff;
+    background-color: #fb3;
+    text-transform: uppercase;
+  }
+  
+  .pricing-list {
+    width: 15rem;
+    background-color: #ffffff;
+  }
+  
+  .coments {
+    width: 270px;
+    height: 125px;
+    padding: 5px 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  .coments-arrow {
+    background-color: #f5f5f5;
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+    margin-top: -10px;
+    transform: rotate(45deg);
+  }
+  
+  .coments-photo {
+    width: 270px;
+    display: flex;
+    margin-top: 10px;
+  }
+  .custom-bg {
+    background-color: rgba(0,0,0,0.7);
+    background-blend-mode: darken;
+    background-image: url(/img/u25_state0.jpg);
+    height: 324px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  
