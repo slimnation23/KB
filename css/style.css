@@ -20,7 +20,7 @@
   }
   
   .headerBg {
-    background-image: url(/img/headerImg.jpg);
+    background-image: url(headerImg.jpg);
     background-size: cover;
     height: 100vh;
     display: flex;
