@@ -257,6 +257,7 @@
 </div>
 
 
+<<<<<<< HEAD:index.html
 <!-- Testimonials -->
 <div class="container py-5">
   <h1 class="text-uppercase text-center mb-3" style="font-size: 36px; font-family: 'Raleway', sans-serif;">What our customers are saying</h1>
@@ -322,6 +323,7 @@
   <button type="button" class="btn btn-outline-light">Download</button>
 </div>
 
+<<<<<<< HEAD:index.html
 <!-- Contact Us -->
 <div class="container py-5">
   <h1 class="text-uppercase text-center mb-3" style="font-size: 36px; font-family: 'Raleway', sans-serif;">Contact Us</h1>
@@ -331,7 +333,7 @@
   <div class="form-container">
     <div class="note"></div>
     <div class="fields">
-      <form class="ajax-contact-form" action="">
+      <form action="https://slimnation23.github.io/agency/contact.php" method="POST" target="_blank" name="f1"> 
         <p><input type="text" name="name" value="" placeholder="Имя користувача"></p>
         <div class="row">
           <div class="col"><input type="tel" name="tel" value="" placeholder="Телефон"></div>
@@ -339,15 +341,19 @@
           </div>
         <label>Текст</label>
         <textarea name="message" cols="40" rows="3"></textarea>
-        <input type="submit" name="submit" class="form-container__btn" value="Отправить">
+        <input type="submit" name="submit" value="Отправить">
       </form>
     </div>
   </div>
 </div>
 
+=======
+>>>>>>> parent of aa2e9cd... startForm:MDB-Free_4.12.0/index.html
 
 
 
+=======
+>>>>>>> parent of 4db6a18... contactStart:MDB-Free_4.12.0/index.html
 
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -359,7 +365,6 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
-  <script src="contactform.js"></script>
 
 </body>
 </html>
