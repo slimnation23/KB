@@ -29,7 +29,7 @@ $note_text="���� : $urok \r\n��� : $name1 \r\n Email : $email1 \r\
 if (isset($name1)  &&  isset ($sab) ) {
 mail($address,$urok,$note_text,"Content-type:text/plain; windows-1251"); 
 // ��������� ����� �������� �����
-echo "<p style='color:#009900;'>���������(��) <b>$name1</b> ���� ������ ����������� �������. <br> �������. <br>��� ����� ������� �� ����� <b> $email1</b>.</p>";
+echo "<p style='color:#009900;'>text<b>$name1</b> djfnskdjfn. <br> sgfsd. <br>sdfgsdf <b> $email1</b>.</p>";
 }
 
 ?>
