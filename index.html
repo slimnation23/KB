@@ -32,7 +32,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
@@ -128,21 +128,36 @@
   <div class="container py-5">
     <div class="row">
       <div class="col-lg-2 col-sm-12 flex-column align-self-center text-center mb-3">
-        <button type="button" class="btn btn-dark rounded font-weight-bold btn-hover-warning tab">TAB 1</button>
-        <button type="button" class="btn btn-dark rounded font-weight-bold btn-hover-warning tab">TAB 2</button>
-        <button type="button" class="btn btn-dark rounded font-weight-bold btn-hover-warning tab">TAB 3</button>
+        <button onclick="selectTab1()" type="button" class="btn btn-dark rounded font-weight-bold btn-hover-warning tab">TAB 1</button>
+        <button onclick="selectTab2()" type="button" class="btn btn-dark rounded font-weight-bold btn-hover-warning tab">TAB 2</button>
+        <button onclick="selectTab3()" type="button" class="btn btn-dark rounded font-weight-bold btn-hover-warning tab">TAB 3</button>
       </div>
-      <div class="col-lg-5 col-sm-12">
+      <div class="col-lg-5 col-sm-12 animated pulse" id="section1">
         <h5 class="font-weight-bold pt-3">Tabs with soft transitioning effect.</h5>
-        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic, accusamus,
-           corrupti nisi fuga facere ex ullam error blanditiis voluptate veniam optio eos?
-            Placeat perspiciatis eaque atque reprehenderit, labore minus laboriosam deleniti
-             mollitia fugit nam voluptates.</p>
+        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-4">Tab1</p>
         <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore vero temporibus ipsa?</p>
         <button type="button" class="btn btn-warning mt-3 text-white" style="margin: .1rem;">Download</button>
       </div>
-      <div class="col-lg-4 offset-lg-1 col-sm-12 align-self-center mt-5">
+      <div class="col-lg-5 col-sm-12 animated pulse" id="section2">
+        <h5 class="font-weight-bold pt-3">Tabs with soft transitioning effect.</h5>
+        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-4">Tab 2</p>
+        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore vero temporibus ipsa?</p>
+        <button type="button" class="btn btn-warning mt-3 text-white" style="margin: .1rem;">Download</button>
+      </div>
+      <div class="col-lg-5 col-sm-12 animated pulse" id="section3">
+        <h5 class="font-weight-bold pt-3">Tabs with soft transitioning effect.</h5>
+        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-4">Tab3</p>
+        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore vero temporibus ipsa?</p>
+        <button type="button" class="btn btn-warning mt-3 text-white" style="margin: .1rem;">Download</button>
+      </div>
+      <div class="col-lg-4 offset-lg-1 col-sm-12 align-self-center mt-5 animated pulse" id="sectionImg1">
         <img src="img/town.png" alt="town" class="w-100">
+      </div>
+      <div class="col-lg-4 offset-lg-1 col-sm-12 align-self-center mt-5 animated pulse" id="sectionImg2">
+        <img src="img/image_right_standard.png" alt="town" class="w-100">
+      </div>
+      <div class="col-lg-4 offset-lg-1 col-sm-12 align-self-center mt-5 animated pulse" id="sectionImg3">
+        <img src="img/image_window.jpg" alt="town" class="w-100">
       </div>
     </div>
   </div>
@@ -335,7 +350,7 @@
   <div style="width: 70px; height: 2px; background-color: #fb3; margin-left: auto; margin-right: auto;"></div>
   <p class="text-center my-3" style="font-size: 14px; color: rgb(134, 135, 139);">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 
-  <div class="row mt-5">
+  <div class="row text-center mt-5">
     <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
       <div class="coments">
         <p class="text-center my-3" style="font-size: 14px; color: rgb(134, 135, 139);">
@@ -481,7 +496,7 @@
                 </li>
 
                 <li><i class="fa fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@mdbootstrap.com</p>
+                    <p>contact@gmail.com</p>
                 </li>
             </ul>
         </div>
@@ -496,10 +511,6 @@
 <!-- Footer -->
 
 
-
-
-
-
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -509,8 +520,7 @@
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
   <!-- Your custom scripts (optional) -->
-  <script type="text/javascript"></script>
-  <script src="contactform.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 
 </body>
 </html>

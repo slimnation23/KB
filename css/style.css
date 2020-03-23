@@ -10,8 +10,8 @@
   }
   
   li:hover {
-    border-top: 2px solid grey;
-    border-bottom: 2px solid grey;
+    border-top: 1px solid #fb3;
+    border-bottom: 1px solid #fb3;
     cursor: pointer;
   }
   
@@ -20,7 +20,7 @@
   }
   
   .headerBg {
-    background-image: url(/img/headerImg.jpg);
+    background-image: url(/img/headerImg.png);
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -56,6 +56,10 @@
       }
   }
   
+#section2, #section3, #sectionImg2, #sectionImg3 {
+  display: none;
+}
+
   .prising-group {
     margin-top: 3rem;
     display: flex;
@@ -126,9 +130,7 @@
     margin-top: 10px;
   }
   .custom-bg {
-    background-color: rgba(0,0,0,0.7);
-    background-blend-mode: darken;
-    background-image: url(/img/u25_state0.jpg);
+    background-image: url(/img/u25_state0.png);
     height: 324px;
     display: flex;
     flex-direction: column;
