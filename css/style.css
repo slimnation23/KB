@@ -20,7 +20,7 @@
   }
   
   .headerBg {
-    background-image: url(img/headerImg.png);
+    background-image: url(https://images.pexels.com/photos/858076/pexels-photo-858076.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -130,7 +130,9 @@
     margin-top: 10px;
   }
   .custom-bg {
-    background-image: url(img/u25_state0.png);
+    background-image: url(https://images.pexels.com/photos/269561/pexels-photo-269561.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center center;
+    background-size: cover;
     height: 324px;
     display: flex;
     flex-direction: column;
