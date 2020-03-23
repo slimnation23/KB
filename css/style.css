@@ -20,7 +20,7 @@
   }
   
   .headerBg {
-    background-image: url(/img/headerImg.png);
+    background-image: url(img/headerImg.png);
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -130,7 +130,7 @@
     margin-top: 10px;
   }
   .custom-bg {
-    background-image: url(/img/u25_state0.png);
+    background-image: url(img/u25_state0.png);
     height: 324px;
     display: flex;
     flex-direction: column;
