@@ -42,13 +42,13 @@
     width: 112px;
     height: 112px;
     margin: .1rem;
+    font-weight: bold;
+    border-radius: 0.3rem;
   }
-  
-  .btn-hover-warning:hover {
-    color: #212529 !important;
+
+  .activeTab, .tab:hover {
     background-color: #fb3 !important;
-    border-color: #fb3 !important;
-  }
+  } 
   
   @media screen and (max-width: 992px) {
       .brand-bar {
