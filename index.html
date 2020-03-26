@@ -4,8 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!-- MDB icon -->
-  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <link rel="icon" href="https://img.icons8.com/dusk/64/000000/structural.png">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap" rel="stylesheet">
@@ -33,36 +32,32 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#about">Про компанію <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#project">Проекти</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Disabled</a>
+            <a class="nav-link" href="#contacts">Контакти</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div class="container-fluid headerBg pb-4">
+  <div class="container-fluid headerBg">
     <div class="container">
       <div class="row header-content">
         <div class="col-lg-8 col-md-7 col-sm-12 mb-sm-4">
           <img src="img/Logo2.png" alt="logo">
-          <h1 class="text-uppercase text-white my-4" style="font-size: 36px; font-family: 'Raleway', sans-serif;">
-            Lorem ipsum dolor sit amet consectetur
+          <h1 class="text-uppercase my-2" style="font-size: 36px; color: #343633; font-family: 'Raleway', sans-serif;">
+            Проектування і будівництво будинків в Україні
           </h1>
           <div style="width: 70px; height: 2px; background-color: #ffffff;"></div>
-          <p class="my-4" style="font-family: 'Raleway', sans-serif; color: rgba(255, 255, 255, 0.8);">
+          <p class="my-4" style="font-family: 'Raleway', sans-serif; color: #343633;">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto id dicta sed ea sequi culpa 
             quas nihil cupiditate magnam voluptatem, excepturi fugiat laboriosam atque!
           </p>
-          <button type="button" class="btn btn-outline-light mb-4">Download</button>
         </div>
         <div class="col-lg-4 col-md-5 col-sm-12 align-self-center">
           <!-- Default form subscription -->
@@ -94,7 +89,7 @@
   </div>
 
 <!-- Brand Bar -->
-<div class="container-fluid" style="box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38); position: relative;">
+<!-- <div class="container-fluid" style="box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38); position: relative;">
   <div class="container py-2">
     <div class="row align-items-center pt-2" style="color: #86878b;">
       <div class="col-lg-5 col-sm-12 brand-bar">
@@ -121,49 +116,67 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Features -->
-<div class="container-fluid" style="background-color: #f5f5f5;">
+<div class="container-fluid projectBg" id="project">
   <div class="container py-5">
     <div class="row">
       <div class="col-lg-2 col-sm-12 flex-column align-self-center text-center mb-3" id='myDIV'>
-        <button onclick="selectTab1()" type="button" class="btn btn-dark tab activeTab">TAB 1</button>
-        <button onclick="selectTab2()" type="button" class="btn btn-dark tab">TAB 2</button>
-        <button onclick="selectTab3()" type="button" class="btn btn-dark tab">TAB 3</button>
+        <button onclick="selectTab1()" type="button" class="btn btn-dark tab activeTab">Проекти до 100</button>
+        <button onclick="selectTab2()" type="button" class="btn btn-dark tab">Проекти від <br /> 100 до 200</button>
+        <button onclick="selectTab3()" type="button" class="btn btn-dark tab">Проекти від 200</button>
       </div>
       <div class="col-lg-5 col-sm-12 animated pulse" id="section1">
-        <h5 class="font-weight-bold pt-3">Tabs with soft transitioning effect.</h5>
-        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-4">Tab1</p>
-        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore vero temporibus ipsa?</p>
-        <button type="button" class="btn btn-warning mt-3 text-white" style="margin: .1rem;">Download</button>
+        <h5 class="font-weight-bold pt-3">Проекти до 100 кв. м</h5>
+        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-4">
+          Будинки до 100 кв. м. дуже популярні у наш час. Це вибір сімей, 
+          яким потрібне компактне та практичне житло. Також серед наших проектів будинків оберете відмінний варіант для невеликої ділянки.
+        </p>
+        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-3">
+          Нижче ви можете переглянути проекти будинків до 100 кв. м. 
+          та обрати свій, який сподобався Вам найбільше.
+        </p>
+        <button type="button" class="btn btn-warning mt-3 text-white" style="margin: .1rem;">Переглянути</button>
       </div>
       <div class="col-lg-5 col-sm-12 animated pulse" id="section2">
-        <h5 class="font-weight-bold pt-3">Tabs with soft transitioning effect.</h5>
-        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-4">Tab 2</p>
-        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore vero temporibus ipsa?</p>
-        <button type="button" class="btn btn-warning mt-3 text-white" style="margin: .1rem;">Download</button>
+        <h5 class="font-weight-bold pt-3">Проекти від 100 до 200 кв. м</h5>
+        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-4">
+          Якщо ви збираєтесь збудувати будинок для своєї сім’ї, то проекти будинків до 200 кв. м – найкраще рішення. 
+          Вони дозволяють включити в будинок всі необхідні зручності та мають достатню житлову площу навіть для декількох сімей.
+        </p>
+        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-3">
+          Нижче ви можете переглянути проекти будинків від 100 до 200 кв. м 
+          та обрати свій, який сподобався Вам найбільше.
+        </p>
+        <button type="button" class="btn btn-warning mt-3 text-white" style="margin: .1rem;">Переглянути</button>
       </div>
       <div class="col-lg-5 col-sm-12 animated pulse" id="section3">
-        <h5 class="font-weight-bold pt-3">Tabs with soft transitioning effect.</h5>
-        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-4">Tab3</p>
-        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore vero temporibus ipsa?</p>
-        <button type="button" class="btn btn-warning mt-3 text-white" style="margin: .1rem;">Download</button>
+        <h5 class="font-weight-bold pt-3">Проекти від 200 кв. м</h5>
+        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-4">
+          Якщо ви переглядали наші проекти та вам не підійшов жоден із них, перегляньте проекти будинків на 200 м. кв. і більше. 
+          Можливо один із них стане для вас оптимальним.
+        </p>
+        <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-3">
+          Нижче ви можете переглянути проекти будинків від 200 кв. м 
+          та обрати свій, який сподобався Вам найбільше.
+        </p>
+        <button type="button" class="btn btn-warning mt-3 text-white" style="margin: .1rem;">Переглянути</button>
       </div>
       <div class="col-lg-4 offset-lg-1 col-sm-12 align-self-center mt-5 animated pulse" id="sectionImg1">
-        <img src="img/town.png" alt="town" class="w-100">
+        <img src="img/home100/s142-19-1.jpg" alt="home100" class="w-100 projectImg">
       </div>
       <div class="col-lg-4 offset-lg-1 col-sm-12 align-self-center mt-5 animated pulse" id="sectionImg2">
-        <img src="img/image_right_standard.png" alt="town" class="w-100">
+        <img src="img/home100-200/Proekt-odnopoverhovogo-budynku-S166-19-.jpg" alt="home100-200" class="w-100 projectImg">
       </div>
       <div class="col-lg-4 offset-lg-1 col-sm-12 align-self-center mt-5 animated pulse" id="sectionImg3">
-        <img src="img/image_window.jpg" alt="town" class="w-100">
+        <img src="img/home200+/PROEKT-budynku-ION-.jpg" alt="home200" class="w-100 projectImg">
       </div>
     </div>
   </div>
 </div>
 
-<div class="container my-5">
+<div class="container py-5" id="contacts">
   <div class="row">
     <div class="col-lg-6 col-sm-12 text-center">
       <img src="img/image_window.jpg" alt="image_window" class="w-100">
@@ -198,7 +211,7 @@
   </div>
 </div>
 
-<div class="container-fluid" style="background-color: #f5f5f5;">
+<div class="container-fluid" style="background-color: #f5f5f5;" id="about">
   <div class="container">
     <div class="row py-4">
       <div class="col-lg-5 offset-lg-1 col-sm-12">
