@@ -6598,8 +6598,6 @@ a.close.disabled {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #fff;
-  text-align: center;
 }
 
 @-webkit-keyframes spinner-border {
