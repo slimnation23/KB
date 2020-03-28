@@ -6,7 +6,7 @@ let sectionImg1 = document.getElementById("sectionImg1");
 let sectionImg2 = document.getElementById("sectionImg2");
 let sectionImg3 = document.getElementById("sectionImg3");
 
-function selectTab1(a) {
+function selectTab1() {
   section1.style.display = "block";
   sectionImg1.style.display = "block";
   section2.style.display = "none";
@@ -34,13 +34,13 @@ function selectTab3() {
 }
 
 // buttonsTab active
-var btnContainer = document.getElementById("myDIV");
+let btnContainer = document.getElementById("myDIV");
 
-var btns = btnContainer.getElementsByClassName("btn");
+let btns = btnContainer.getElementsByClassName("btn");
 
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("activeTab");
+    let current = document.getElementsByClassName("activeTab");
     current[0].className = current[0].className.replace(" activeTab", "");
     this.className += " activeTab";
   });
@@ -60,3 +60,18 @@ $('.nav-link').click(function(e) {
  
   e.preventDefault();
 });
+
+// let headerHeight = document.getElementsByTagName('nav');
+// let myLink = document.getElementsByClassName('nav-link');
+// let htmlAnimate = document.getElementsByTagName('html');
+
+// for (i = 0; i <= myLink.length; i++) {
+
+//   myLink[i].onclick = (e) => {
+
+//     let linkHref = this.document.getElementsByName('href');
+
+//     e.preventDefault();
+//   }
+// }
+
