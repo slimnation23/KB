@@ -20,11 +20,10 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" style="border-top: 3px solid #fb3;">
-    <div class="container">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
       <a class="navbar-brand mr-5" href="#">
-        <i class="fa fa-home fa-2x" aria-hidden="true" style="color: #fb3; border: 1px solid white; padding: 0.1rem 0.8rem; border-radius: 5px;">
-          <span class="ml-1 text-white">КБ</span>
+        <i class="fa fa-home fa-2x brand-header-icon" aria-hidden="true">
+          <span class="ml-1">КБ</span>
         </i>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -34,13 +33,13 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#carousel-example-2">Головна<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#header">Головна<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-us">Про компанію</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#project">Проекти</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#project">Про компанію</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contacts">Контакти</a>
@@ -48,182 +47,142 @@
         </ul>
 
         <ul class="navbar-nav ml-auto">
+        
           <li class="nav-item">
-            <a class="nav-link" href="tel:+380681376646">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span class="ml-2">068 137 66 46</span> 
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#project">
+            <a class="nav-link" href="#">
               <img src="img/icons/ukraine.png" alt="ukr">
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacts">
+            <a class="nav-link" href="#">
               <img src="img/icons/russia.png" alt="rus">
             </a>
           </li>
         </ul>
       </div>
-    </div>
   </nav>
 
+  <!-- <div class="container-fluid homepage" id="header">
+    <div class="container">
+      <div class="homepage-content animated zoomIn">
+        <i class="fa fa-home fa-3x" aria-hidden="true" style="color: #fb3; border: 2px solid #fb3; padding: 0.5rem 0.8rem; border-radius: 5px;">
+          <span class="ml-2 text-white">КБ</span>
+        </i>
+        <h1 class="text-uppercase my-4 text-white font-weight-bold">
+          Проектування та будівництво будинків в Україні
+        </h1>
+        <p class="my-4" style="color: #dbdbdb">
+        Будь-який проект на нашому сайті - ідеальне рішення для будівництва 
+          сучасного енергозберігаючого будинку
+        </p>
+        <i class="fa fa-angle-double-down fa-2x arrow-down" href="#about-us" aria-hidden="true"></i>
+      </div>
+    </div>
+  </div> -->
+
+
+
 <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
-  <!--Slides-->
-  <div class="carousel-inner" role="listbox">
+  
+  <div class="carousel-inner" id="header" role="listbox">
 
     <div class="carousel-item active">
       <div class="view">
-        <img class="d-block w-100" src="img/header/header-photo.jpeg" alt="First slide">
-        <div class="mask rgba-black-strong"></div>
-      </div>
-      <div class="carousel-caption">
-        <div class="row">
-        <div class="col-lg-8 col-md-7 col-sm-12 mb-sm-4 mt-4">
-          <i class="fa fa-home fa-3x" aria-hidden="true" style="color: #fb3; border: 2px solid #fb3; padding: 0.5rem 0.8rem; border-radius: 5px;">
-            <span class="ml-2 text-white">КБ</span>
-          </i>
-          <h1 class="text-uppercase my-4" style="font-size: 36px; color: #f5f5f5; ">
-            Проектування і будівництво будинків в Україні
-          </h1>
-          <div style="width: 70px; height: 2px; background-color: #fb3;"></div>
-          <p class="my-4" style="color: #f5f5f5bd">
-            <i>Будь-який проект на нашому сайті - ідеальне рішення для будівництва 
-              сучасного енергозберігаючого будинку</i>
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-5 col-sm-12 align-self-center">
-         
-          <form class="text-center border border-light white" action="#!">
-
-            <p class="h4 mb-5 py-2 grey lighten-2">Зв’язатися з нами</p>
-
-            <p>
-              <a class="text-warning" href="" target="_blank">Ми завжди раді відповісти на всі ваші питання</a>
-            </p>
-
-            <div class="p-4">
-            
-              <input type="text" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Ім'я">
-
-             
-              <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail">
-            </div>
-
-            
-            <button class="btn btn-warning btn-block font-weight-bold" type="submit">Надіслати</button>
-
-          </form>
-          
-        </div>
-      </div>
-      </div>
-    </div>
-<!-- 
-    <div class="carousel-item">
-      <div class="view">
-        <img class="d-block w-100" src="img/header/serseya-min.jpg"
+        <img class="d-block w-100 slider-img" src="img/header/header-photo.jpeg"
           alt="First slide">
         <div class="mask rgba-black-strong"></div>
       </div>
       <div class="carousel-caption">
-        <div class="row">
-        <div class="col-lg-8 col-md-7 col-sm-12 mb-sm-4 mt-4">
-          <i class="fa fa-home fa-3x" aria-hidden="true" style="color: #fb3; border: 2px solid #fb3; padding: 0.5rem 0.8rem; border-radius: 5px;">
-            <span class="ml-2 text-white">КБ</span>
-          </i>
-          <h1 class="text-uppercase my-4" style="font-size: 36px; color: #f5f5f5; ">
-            Проектування і будівництво будинків в Україні
-          </h1>
-          <div style="width: 70px; height: 2px; background-color: #fb3;"></div>
-          <p class="my-4" style="color: #f5f5f5bd">
-            <i>Будь-який проект на нашому сайті - ідеальне рішення для будівництва 
-              сучасного енергозберігаючого будинку</i>
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-5 col-sm-12 align-self-center">
-         
-          <form class="text-center border border-light white" action="#!">
-
-            <p class="h4 mb-5 py-2 grey lighten-2">Зв’язатися з нами</p>
-
-            <p>
-              <a class="text-warning" href="" target="_blank">Ми завжди раді відповісти на всі ваші питання</a>
-            </p>
-
-            <div class="p-4">
-            
-              <input type="text" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Ім'я">
-
-             
-              <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail">
-            </div>
-
-            
-            <button class="btn btn-warning btn-block font-weight-bold" type="submit">Надіслати</button>
-
-          </form>
-          
-        </div>
-      </div>
+        <i class="fa fa-home fa-3x brand-icon" aria-hidden="true">
+          <span class="ml-2 text-white">КБ</span>
+        </i>
+        <h1 class="text-uppercase my-4 text-white font-weight-bold">
+          Проектування та будівництво будинків в Україні
+        </h1>
+        <p class="my-4" style="color: #dbdbdb">
+        Будь-який проект на нашому сайті - ідеальне рішення для будівництва 
+          сучасного енергозберігаючого будинку
+        </p>
+        <i class="fa fa-angle-double-down fa-2x arrow-down" href="#about-us" aria-hidden="true"></i>
       </div>
     </div>
 
     <div class="carousel-item">
       <div class="view">
-        <img class="d-block w-100" src="img/header/photo-hrader2.jpg"
+        <img class="d-block w-100 slider-img" src="img/header/photo-hrader2.jpg"
           alt="First slide">
         <div class="mask rgba-black-strong"></div>
       </div>
       <div class="carousel-caption">
-        <div class="row">
-        <div class="col-lg-8 col-md-7 col-sm-12 mb-sm-4 mt-4">
-          <i class="fa fa-home fa-3x" aria-hidden="true" style="color: #fb3; border: 2px solid #fb3; padding: 0.5rem 0.8rem; border-radius: 5px;">
-            <span class="ml-2 text-white">КБ</span>
-          </i>
-          <h1 class="text-uppercase my-4" style="font-size: 36px; color: #f5f5f5; ">
-            Проектування і будівництво будинків в Україні
-          </h1>
-          <div style="width: 70px; height: 2px; background-color: #fb3;"></div>
-          <p class="my-4" style="color: #f5f5f5bd">
-            <i>Будь-який проект на нашому сайті - ідеальне рішення для будівництва 
-              сучасного енергозберігаючого будинку</i>
-          </p>
-        </div>
-        <div class="col-lg-4 col-md-5 col-sm-12 align-self-center">
-         
-          <form class="text-center border border-light white" action="#!">
-
-            <p class="h4 mb-5 py-2 grey lighten-2">Зв’язатися з нами</p>
-
-            <p>
-              <a class="text-warning" href="" target="_blank">Ми завжди раді відповісти на всі ваші питання</a>
-            </p>
-
-            <div class="p-4">
-            
-              <input type="text" id="defaultSubscriptionFormPassword" class="form-control mb-4" placeholder="Ім'я">
-
-             
-              <input type="email" id="defaultSubscriptionFormEmail" class="form-control mb-4" placeholder="E-mail">
-            </div>
-
-            
-            <button class="btn btn-warning btn-block font-weight-bold" type="submit">Надіслати</button>
-
-          </form>
-          
-        </div>
+        <i class="fa fa-home fa-3x brand-icon" aria-hidden="true">
+          <span class="ml-2 text-white">КБ</span>
+        </i>
+        <h1 class="text-uppercase my-4 text-white font-weight-bold">
+          Проектування та будівництво будинків в Україні
+        </h1>
+        <p class="my-4" style="color: #dbdbdb">
+        Будь-який проект на нашому сайті - ідеальне рішення для будівництва 
+          сучасного енергозберігаючого будинку
+        </p>
+        <i class="fa fa-angle-double-down fa-2x arrow-down" href="#about-us" aria-hidden="true"></i>
       </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="view">
+        <img class="d-block w-100 slider-img" src="img/header/serseya-min.jpg"
+          alt="First slide">
+        <div class="mask rgba-black-strong"></div>
       </div>
-    </div> -->
-    
+      <div class="carousel-caption">
+        <i class="fa fa-home fa-3x brand-icon" aria-hidden="true">
+          <span class="ml-2 text-white">КБ</span>
+        </i>
+        <h1 class="text-uppercase my-4 text-white font-weight-bold">
+          Проектування та будівництво будинків в Україні
+        </h1>
+        <p class="my-4" style="color: #dbdbdb">
+        Будь-який проект на нашому сайті - ідеальне рішення для будівництва 
+          сучасного енергозберігаючого будинку
+        </p>
+        <i class="fa fa-angle-double-down fa-2x arrow-down" href="#about-us" aria-hidden="true"></i>
+      </div>
+    </div>
+
+   
+    </div>
   </div>
-  <!--/.Slides-->
-</div>
 
-  
+  <!-- Our process -->
+<div class="container py-5" id="about-us">
+  <h1 class="text-uppercase text-center mb-3" style="font-size: 36px; font-family: 'Raleway', sans-serif;">Why this is awesome</h1>
+  <div style="width: 70px; height: 2px; background-color: #fb3; margin-left: auto; margin-right: auto;"></div>
+  <p class="text-center my-3" style="font-size: 14px; color: rgb(134, 135, 139);">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+  <div class="row text-center">
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <i class="fa fa-lightbulb-o fa-4x" aria-hidden="true"
+        style="border: 2px solid #fb3; border-radius: 50%; padding: 20px 35px; color: #fb3;"></i>
+      <h5 class="text-center my-3 font-weight-bold">Thoughtful Design</h5>
+      <p class="text-center my-3" style="font-size: 14px; color: rgb(134, 135, 139);">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iste vitae, distinctio praesentium fugit velit saepe ut voluptatum. Doloremque eaque id nesciunt?</p>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <i class="fa fa-keyboard-o fa-4x" aria-hidden="true"
+        style="border: 2px solid #fb3; border-radius: 50%; padding: 20px; color: #fb3;"></i>
+      <h5 class="text-center my-3 font-weight-bold">Well Crafted</h5>
+      <p class="text-center my-3" style="font-size: 14px; color: rgb(134, 135, 139);">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iste vitae, distinctio praesentium fugit velit saepe ut voluptatum. Doloremque eaque id nesciunt?</p>
+    </div>
+    <div class="col-lg-4 col-md-6 col-sm-12">
+      <i class="fa fa-bolt fa-4x" aria-hidden="true"
+        style="border: 2px solid #fb3; border-radius: 50%; padding: 20px 35px; color: #fb3;"></i>
+      <h5 class="text-center my-3 font-weight-bold">Easy to Customize</h5>
+      <p class="text-center my-3" style="font-size: 14px; color: rgb(134, 135, 139);">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iste vitae, distinctio praesentium fugit velit saepe ut voluptatum. Doloremque eaque id nesciunt?</p>
+    </div>
+  </div>
+</div>
 
 <!-- Brand Bar -->
 <!-- <div class="container-fluid" style="box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.38); position: relative;">
@@ -257,7 +216,7 @@
 
 <!-- Features -->
 <div class="container-fluid projectBg" id="project">
-  <div class="container py-5">
+  <div class="container">
     <div class="row">
       <div class="col-lg-2 col-sm-12 flex-column align-self-center text-center mb-3" id='myDIV'>
         <button onclick="selectTab1()" type="button" class="btn btn-dark tab activeTab">Проекти до 100</button>
@@ -265,7 +224,7 @@
         <button onclick="selectTab3()" type="button" class="btn btn-dark tab">Проекти від 200</button>
       </div>
       <div class="col-lg-5 col-sm-12 animated pulse" id="section1">
-        <h5 class="font-weight-bold pt-3">Проекти до 100 кв. м</h5>
+        <h3 class="font-weight-bold pt-3">Проекти до 100 кв. м</h3>
         <p style="font-size: 14px; color: rgb(134, 135, 139);" class="pt-4">
           Будинки до 100 кв. м. дуже популярні у наш час. Це вибір сімей, 
           яким потрібне компактне та практичне житло. Також серед наших проектів будинків оберете відмінний варіант для невеликої ділянки.
@@ -300,13 +259,13 @@
         </p>
         <button type="button" class="btn btn-warning mt-3 text-white" style="margin: .1rem;">Переглянути</button>
       </div>
-      <div class="col-lg-4 offset-lg-1 col-sm-12 align-self-center mt-5 animated pulse" id="sectionImg1">
+      <div class="col-lg-4 offset-lg-1 col-sm-12 mt-5 animated pulse" id="sectionImg1">
         <img src="img/home100/s142-19-1.jpg" alt="home100" class="w-100 projectImg">
       </div>
-      <div class="col-lg-4 offset-lg-1 col-sm-12 align-self-center mt-5 animated pulse" id="sectionImg2">
+      <div class="col-lg-4 offset-lg-1 col-sm-12 mt-5 animated pulse" id="sectionImg2">
         <img src="img/home100-200/Proekt-odnopoverhovogo-budynku-S166-19-.jpg" alt="home100-200" class="w-100 projectImg">
       </div>
-      <div class="col-lg-4 offset-lg-1 col-sm-12 align-self-center mt-5 animated pulse" id="sectionImg3">
+      <div class="col-lg-4 offset-lg-1 col-sm-12 mt-5 animated pulse" id="sectionImg3">
         <img src="img/home200+/PROEKT-budynku-ION-.jpg" alt="home200" class="w-100 projectImg">
       </div>
     </div>
@@ -385,40 +344,11 @@
   </div>
 </div>
 
-<!-- Our process -->
-<div class="container my-5">
-  <h1 class="text-uppercase text-center mb-3" style="font-size: 36px; font-family: 'Raleway', sans-serif;">Why this is awesome</h1>
-  <div style="width: 70px; height: 2px; background-color: #fb3; margin-left: auto; margin-right: auto;"></div>
-  <p class="text-center my-3" style="font-size: 14px; color: rgb(134, 135, 139);">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
 
-  <div class="row text-center">
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <i class="fa fa-lightbulb-o fa-4x" aria-hidden="true"
-        style="border: 2px solid #fb3; border-radius: 50%; padding: 20px 35px; color: #fb3;"></i>
-      <h5 class="text-center my-3 font-weight-bold">Thoughtful Design</h5>
-      <p class="text-center my-3" style="font-size: 14px; color: rgb(134, 135, 139);">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Iste vitae, distinctio praesentium fugit velit saepe ut voluptatum. Doloremque eaque id nesciunt?</p>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <i class="fa fa-keyboard-o fa-4x" aria-hidden="true"
-        style="border: 2px solid #fb3; border-radius: 50%; padding: 20px; color: #fb3;"></i>
-      <h5 class="text-center my-3 font-weight-bold">Well Crafted</h5>
-      <p class="text-center my-3" style="font-size: 14px; color: rgb(134, 135, 139);">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Iste vitae, distinctio praesentium fugit velit saepe ut voluptatum. Doloremque eaque id nesciunt?</p>
-    </div>
-    <div class="col-lg-4 col-md-6 col-sm-12">
-      <i class="fa fa-bolt fa-4x" aria-hidden="true"
-        style="border: 2px solid #fb3; border-radius: 50%; padding: 20px 35px; color: #fb3;"></i>
-      <h5 class="text-center my-3 font-weight-bold">Easy to Customize</h5>
-      <p class="text-center my-3" style="font-size: 14px; color: rgb(134, 135, 139);">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Iste vitae, distinctio praesentium fugit velit saepe ut voluptatum. Doloremque eaque id nesciunt?</p>
-    </div>
-  </div>
-</div>
 
 <!-- Pricing -->
 
-<div class="container-fluid" style="background-color: #f5f5f5;">
+<!-- <div class="container-fluid" style="background-color: #f5f5f5;">
   <div class="container py-5">
     <h1 class="text-uppercase text-center mb-3" style="font-size: 36px; font-family: 'Raleway', sans-serif;">Pricing options</h1>
     <div style="width: 70px; height: 2px; background-color: #fb3; margin-left: auto; margin-right: auto;"></div>
@@ -491,11 +421,11 @@
       
     </div>
   </div>
-</div>
+</div> -->
 
 
 <!-- Testimonials -->
-<div class="container py-4">
+<!-- <div class="container py-4">
   <h1 class="text-uppercase text-center mb-3" style="font-size: 36px; font-family: 'Raleway', sans-serif;">What our customers are saying</h1>
   <div style="width: 70px; height: 2px; background-color: #fb3; margin-left: auto; margin-right: auto;"></div>
   <p class="text-center my-3" style="font-size: 14px; color: rgb(134, 135, 139);">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
@@ -550,7 +480,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Custom Section -->
 <div class="container-fluid custom-bg">
