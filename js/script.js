@@ -5,8 +5,9 @@ let section3 = document.getElementById("section3");
 let sectionImg1 = document.getElementById("sectionImg1");
 let sectionImg2 = document.getElementById("sectionImg2");
 let sectionImg3 = document.getElementById("sectionImg3");
+let scrollDown = document.getElementsByClassName('arrow-down');
 
-function selectTab1(a) {
+function selectTab1() {
   section1.style.display = "block";
   sectionImg1.style.display = "block";
   section2.style.display = "none";
@@ -34,13 +35,13 @@ function selectTab3() {
 }
 
 // buttonsTab active
-var btnContainer = document.getElementById("myDIV");
+let btnContainer = document.getElementById("myDIV");
 
-var btns = btnContainer.getElementsByClassName("btn");
+let btns = btnContainer.getElementsByClassName("btn");
 
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("activeTab");
+    let current = document.getElementsByClassName("activeTab");
     current[0].className = current[0].className.replace(" activeTab", "");
     this.className += " activeTab";
   });
@@ -52,11 +53,21 @@ let headerHeight = $('nav').outerHeight();
 $('.nav-link').click(function(e) {
   let linkHref = $(this).attr('href');
   
-  console.log(headerHeight);
-  
   $('html, body').animate({
     scrollTop: $(linkHref).offset().top - headerHeight
   }, 200)
  
   e.preventDefault();
 });
+
+$('.arrow-down').click(function(e) {
+  let linkHreff = $(this).attr('href');
+  
+  $('html, body').animate({
+    scrollTop: $(linkHreff).offset().top - headerHeight
+  }, 100)
+ 
+  e.preventDefault();
+});
+
+
