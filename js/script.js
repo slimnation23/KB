@@ -70,4 +70,18 @@ $('.arrow-down').click(function(e) {
   e.preventDefault();
 });
 
+$('.drop-down').click(function(e) {
+  let dropDown = $(this).attr('href');
+  
+  $('html, body').animate({
+    scrollTop: $(dropDown).offset().top - headerHeight
+  }, 100)
+ 
+  e.preventDefault();
+});
+
+// Slider
+$('.carousel').carousel({
+  interval: 2500
+})
 
