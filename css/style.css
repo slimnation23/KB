@@ -136,7 +136,7 @@ ul {
   }
 }
 
-.projectBg {
+.fixed-bg {
   background-attachment: fixed;
   background-position: center center;
   background-size: 560px;
