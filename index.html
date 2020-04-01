@@ -434,34 +434,21 @@
 <!-- Contact Us -->
 <div class="container-fluid fixed-bg" id="project" style="background-image: url(img/mr-white-pattern.jpg);">
 
-<div class="container py-5" id='contacts'>
-  <h1 class="text-uppercase text-center mb-3" style="font-size: 36px; font-family: 'Raleway', sans-serif;">Contact Us</h1>
-  <div style="width: 70px; height: 2px; background-color: #fb3; margin-left: auto; margin-right: auto;"></div>
-  <p class="text-center my-3" style="font-size: 14px; color: rgb(134, 135, 139);">
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-  </p>
-
- 
-
+  <div class="container py-5" id='contacts'>
+    <h1 class="text-uppercase text-center mb-3">Зв'язатися з нами</h1>
+    <div style="width: 70px; height: 2px; background-color: #fb3; margin-left: auto; margin-right: auto;"></div>
+    <p class="text-center my-3" style="font-size: 14px; color: rgb(134, 135, 139);">
+      З вами зв'яжеться наш представник
+    </p>
     
-      <div class="row d-flex justify-content-center">
-        <div class="col-2">
-     
-        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+    <form class="form2 text-center" id="contact-form" name="contact-form" action="mail.php" method="POST">
+      <input type="email" class="form2__field" name="email" placeholder="E-Mail">
+      <button type="button" class="btn2 btn2--primary btn2--inside uppercase"
+       onclick="document.getElementById('contact-form').submit();">Send</button>
+      <div class="status"></div>
+    </form>
           
-              <div class="md-form">
-                <input type="text" id="email" name="email" class="form-control">
-                <label for="email" class="">Your email</label>
-              </div>
-            </div>
-            <div class="col-2">
-              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-        </form> 
-          </div>
-           
-</div>
+  </div>
 </div>
 
 
