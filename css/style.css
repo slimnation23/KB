@@ -94,6 +94,15 @@ ul {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .form2 .form2-field {
+    width: 280px !important;
+  }
+  .btn2-inside {
+    margin-left: 0 !important;
+  }
+}
+
 @media screen and (min-width: 481px) and (max-width: 767px) {
   .carousel-caption h1 {
     font-size: 1.5rem;
@@ -293,25 +302,33 @@ ul {
   cursor: pointer;
 }
 
-.btn2--primary {
+.btn2-primary {
   background: #7f8ff4;
   color: #fff;
   box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding: 12px 36px;
+  padding: 10px 12px;
 }
 
-.btn2--inside {
+.btn2-inside {
   margin-left: -96px;
 }
 
-.form2 .form2__field {
-  width: 17rem;
-  background: #f7f7f7;
+.form2 .form2-field {
+  width: 360px;
+  background: #fff;
   color: #a3a3a3;
   font: inherit;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
-  border: 1px solid #fb3;
+  border: none;
   border-radius: 5px;
-  padding: 22px 18px;
+  padding: 1rem .8rem;
+}
+
+.active-contact {
+  border: 2px solid rgba(255, 0, 0, 0.466) !important;
+}
+
+#error {
+  color: rgba(255, 0, 0, 0.856);
 }
