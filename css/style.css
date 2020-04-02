@@ -62,9 +62,6 @@ ul {
 
 .brand-header-icon {
   color: #fb3;
-  text-shadow: #ffffff 1px 1px 0, #ffffff 2px 2px 0, 
-               #ffffff 3px 3px 0, #ffffff 4px 4px 0, 
-               #ffffff 5px 5px 0;
 }
 
 .brand-icon {
@@ -346,3 +343,4 @@ footer::before {
   content: "";
   top: 0;
 }
+
