@@ -5,33 +5,45 @@ let section3 = document.getElementById("section3");
 let sectionImg1 = document.getElementById("sectionImg1");
 let sectionImg2 = document.getElementById("sectionImg2");
 let sectionImg3 = document.getElementById("sectionImg3");
-let scrollDown = document.getElementsByClassName("arrow-down");
+let project100 = document.getElementById('project100')
+let project200 = document.getElementById('project200')
+let project300 = document.getElementById('project300')
+
 
 function selectTab1() {
   section1.style.display = "block";
   sectionImg1.style.display = "block";
+  project100.style.display = 'block';
   section2.style.display = "none";
   sectionImg2.style.display = "none";
+  project200.style.display = 'none';
   section3.style.display = "none";
   sectionImg3.style.display = "none";
+  project300.style.display = 'none';
 }
 
 function selectTab2() {
   section1.style.display = "none";
   sectionImg1.style.display = "none";
+  project100.style.display = 'none';
   section2.style.display = "block";
   sectionImg2.style.display = "block";
+  project200.style.display = 'block';
   section3.style.display = "none";
   sectionImg3.style.display = "none";
+  project300.style.display = 'none';
 }
 
 function selectTab3() {
   section1.style.display = "none";
   sectionImg1.style.display = "none";
+  project100.style.display = 'none';
   section2.style.display = "none";
   sectionImg2.style.display = "none";
+  project200.style.display = 'none';
   section3.style.display = "block";
   sectionImg3.style.display = "block";
+  project300.style.display = 'block';
 }
 
 // buttonsTab active
