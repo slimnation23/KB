@@ -200,15 +200,6 @@ ul {
   text-align: center;
 }
 
-#project1SecondPage {
-  display: none;
-}
-
-.navPage {
-  display: flex;
-  justify-content: center;
-}
-
 #itemsPage2 {
   display: flex;
 }
@@ -219,18 +210,6 @@ ul {
 
 #project300 {
   display: none;
-}
-
-.backWhite {
-  width: 100%;
-  background-color: #ffffff !important;
-  border-color: #ffffff !important;
-}
-
-.backFb3 {
-  width: 100%;
-  background-color: #fb3 !important;
-  border-color: #fb3 !important;
 }
 
 .prising-group {
