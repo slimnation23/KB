@@ -58,25 +58,6 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
-// Project pages
-let project1FirstPage = document.getElementById('project1FirstPage');
-let project1SecondPage = document.getElementById('project1SecondPage');
-let page1 = document.getElementsById('page1');
-let page2 = document.getElementsById('page2');
-
-
-function project1First() {
-  project1FirstPage.style.display = 'block';
-  project1SecondPage.style.display = 'none';
-}
-
-function project1Second() {
-  project1FirstPage.style.display = 'none';
-  project1SecondPage.style.display = 'block';
-  page2.classList.add('backFb3');
-  page2.classList.remove('backWhite');
-}
-
 // Scroll
 let headerHeight = $("nav").outerHeight();
 
@@ -92,7 +73,9 @@ $(".nav-link").click(function(e) {
 
   e.preventDefault();
 });
+// Scroll
 
+// Arrow Down
 $(".arrow-down").click(function(e) {
   let linkHreff = $(this).attr("href");
 
@@ -105,7 +88,9 @@ $(".arrow-down").click(function(e) {
 
   e.preventDefault();
 });
+// Arrow Down
 
+// Drop Down
 $(".drop-down").click(function(e) {
   let dropDown = $(this).attr("href");
 
@@ -118,14 +103,15 @@ $(".drop-down").click(function(e) {
 
   e.preventDefault();
 });
+// Drop Down
 
 // Slider
 $(".carousel").carousel({
   interval: 2500
 });
+// Slider
 
 // Focus contact
-
 function validateForm() {
 
   var email =  document.getElementById('email').value;
@@ -142,3 +128,4 @@ function validateForm() {
   
   document.querySelector('.status').innerHTML = "Sending...";
 }
+// Focus contact
