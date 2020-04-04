@@ -5,10 +5,9 @@ let section3 = document.getElementById("section3");
 let sectionImg1 = document.getElementById("sectionImg1");
 let sectionImg2 = document.getElementById("sectionImg2");
 let sectionImg3 = document.getElementById("sectionImg3");
-let project100 = document.getElementById('project100')
-let project200 = document.getElementById('project200')
-let project300 = document.getElementById('project300')
-
+let project100 = document.getElementById('project100');
+let project200 = document.getElementById('project200');
+let project300 = document.getElementById('project300');
 
 function selectTab1() {
   section1.style.display = "block";
@@ -57,6 +56,25 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" activeTab", "");
     this.className += " activeTab";
   });
+}
+
+// Project pages
+let project1FirstPage = document.getElementById('project1FirstPage');
+let project1SecondPage = document.getElementById('project1SecondPage');
+let page1 = document.getElementsById('page1');
+let page2 = document.getElementsById('page2');
+
+
+function project1First() {
+  project1FirstPage.style.display = 'block';
+  project1SecondPage.style.display = 'none';
+}
+
+function project1Second() {
+  project1FirstPage.style.display = 'none';
+  project1SecondPage.style.display = 'block';
+  page2.classList.add('backFb3');
+  page2.classList.remove('backWhite');
 }
 
 // Scroll

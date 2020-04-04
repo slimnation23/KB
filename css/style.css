@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
 }
 
-li {
+ul li {
   list-style-type: none;
 }
 
@@ -200,7 +200,7 @@ ul {
   text-align: center;
 }
 
-#secondPage {
+#project1SecondPage {
   display: none;
 }
 
@@ -221,7 +221,14 @@ ul {
   display: none;
 }
 
-.page-item.active .page-link {
+.backWhite {
+  width: 100%;
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+.backFb3 {
+  width: 100%;
   background-color: #fb3 !important;
   border-color: #fb3 !important;
 }
