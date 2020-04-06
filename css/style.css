@@ -199,9 +199,8 @@ ul {
 .card-body {
   text-align: center;
 }
-
-#itemsPage2 {
-  display: flex;
+.card-img, .card-img-top {
+  height: 13rem;
 }
 
 #project200 {
