@@ -153,6 +153,14 @@ ul {
   }
 }
 
+.orange-line {
+  width: 70px; 
+  height: 2px; 
+  background-color: #fb3; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
 .fixed-bg {
   background-attachment: fixed;
   background-position: center center;
