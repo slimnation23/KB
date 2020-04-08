@@ -1,15 +1,16 @@
-Vue.component("project100", {
+Vue.component("project300rus", {
     template: `
     <div class="row text-center fadeIn animated">
+
         <div class="col-lg-4 col-md-6 col-sm-12 p-4">
           <!-- Card -->
           <div class="card">
 
             <!-- Card image -->
             <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/С142-19/С142-19.jpg"
+              <img class="card-img-top" src="../img/home200+/projects300/bora/bora.jpg"
                 alt="Card image cap">
-              <a href="projects100/С142-19.html" target="_blank">
+              <a href="../rus/projects300/bora.html" target="_blank">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
@@ -18,31 +19,7 @@ Vue.component("project100", {
             <div class="card-body">
 
               <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «С142-19» 51.92 М²</h5>
-            
-            </div>
-          </div>
-          <!-- Card -->
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 p-4">
-          <!-- Card -->
-          <div class="card">
-
-            <!-- Card image -->
-            <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/Levin/levin.jpg"
-                alt="Card image cap">
-              <a href="projects100/levin.html" target="_blank">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!-- Card content -->
-            <div class="card-body">
-
-              <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «ЛЕВІН» 70 М²</h5>
+              <h5 class="card-title">ПРОЕКТ «БОРА» 240,51 М²</h5>
               
             </div>
           </div>
@@ -55,9 +32,9 @@ Vue.component("project100", {
 
             <!-- Card image -->
             <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/Rico/riko-600x410.jpg"
+              <img class="card-img-top" src="../img/home200+/projects300/bucks/bucks.jpg"
                 alt="Card image cap">
-              <a href="projects100/rico.html" target="_blank">
+              <a href="../rus/projects300/bucks.html" target="_blank">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
@@ -66,81 +43,7 @@ Vue.component("project100", {
             <div class="card-body">
 
               <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «РІКО» 100 M²</h5>
-            
-            </div>
-          </div>
-          <!-- Card -->
-        </div>
-      
-
-    
-        <div class="col-lg-4 col-md-6 col-sm-12 p-4">
-          <!-- Card -->
-          <div class="card">
-
-            <!-- Card image -->
-            <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/Gold/gold-1024x700s.jpg"
-                alt="Card image cap">
-              <a href="projects100/gold.html" target="_blank">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!-- Card content -->
-            <div class="card-body">
-
-              <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «ҐОЛД» 88,68 M²</h5>
-            
-            </div>
-          </div>
-          <!-- Card -->
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 p-4">
-          <!-- Card -->
-          <div class="card">
-
-            <!-- Card image -->
-            <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/Talin/tallin.jpg"
-                alt="Card image cap">
-              <a href="projects100/talin.html" target="_blank">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!-- Card content -->
-            <div class="card-body">
-
-              <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «ТАЛІН» 95,53 M²</h5>
-              
-            </div>
-          </div>
-          <!-- Card -->
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 p-4">
-          <!-- Card -->
-          <div class="card">
-
-            <!-- Card image -->
-            <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/Lony/lony.jpg"
-                alt="Card image cap">
-              <a href="projects100/lony.html" target="_blank">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!-- Card content -->
-            <div class="card-body">
-
-              <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «ЛОНІ» 65,09 M²</h5>
+              <h5 class="card-title">ПРОЕКТ «БАКС» 214 М²</h5>
             
             </div>
           </div>
@@ -155,9 +58,9 @@ Vue.component("project100", {
 
             <!-- Card image -->
             <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/Yanina/yanina-1.jpg"
+              <img class="card-img-top" src="../img/home200+/projects300/clark/clark.jpg"
                 alt="Card image cap">
-              <a href="projects100/yanina.html" target="_blank">
+              <a href="../rus/projects300/clark.html" target="_blank">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
@@ -166,7 +69,7 @@ Vue.component("project100", {
             <div class="card-body">
 
               <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «ЯНІНА» 98,48 M²</h5>
+              <h5 class="card-title">ПРОЕКТ «КЛАРК» 207,46 М²</h5>
             
             </div>
           </div>
@@ -179,9 +82,9 @@ Vue.component("project100", {
 
             <!-- Card image -->
             <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/grybok/grybok.jpg"
+              <img class="card-img-top" src="../img/home200+/projects300/polonia/polonia.jpg"
                 alt="Card image cap">
-              <a href="projects100/grybok.html" target="_blank">
+              <a href="../rus/projects300/polonia.html" target="_blank">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
@@ -190,7 +93,7 @@ Vue.component("project100", {
             <div class="card-body">
 
               <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «ГРИБОК» 101,16 M²</h5>
+              <h5 class="card-title">ПРОЕКТ «ПОЛОНИЯ» 262,14 М²</h5>
               
             </div>
           </div>
@@ -203,9 +106,9 @@ Vue.component("project100", {
 
             <!-- Card image -->
             <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/nastiona/nastiona.jpg"
+              <img class="card-img-top" src="../img/home200+/projects300/ION/ION.jpg"
                 alt="Card image cap">
-              <a href="projects100/nastiona.html" target="_blank">
+              <a href="../rus/projects300/ion.html" target="_blank">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
@@ -214,79 +117,7 @@ Vue.component("project100", {
             <div class="card-body">
 
               <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «НАСТЬОНА» 101,43 M²</h5>
-            
-            </div>
-          </div>
-          <!-- Card -->
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 p-4">
-          <!-- Card -->
-          <div class="card">
-
-            <!-- Card image -->
-            <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/helios/helios.jpg"
-                alt="Card image cap">
-              <a href="projects100/helios.html" target="_blank">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!-- Card content -->
-            <div class="card-body">
-
-              <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «ГЕЛІОС» 89,30 M²</h5>
-            
-            </div>
-          </div>
-          <!-- Card -->
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 p-4">
-          <!-- Card -->
-          <div class="card">
-
-            <!-- Card image -->
-            <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/anastasia/anastasia-1-600x410.jpg"
-                alt="Card image cap">
-              <a href="projects100/anastasia.html" target="_blank">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!-- Card content -->
-            <div class="card-body">
-
-              <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «АНАСТАСІЯ» 93,5 M²</h5>
-              
-            </div>
-          </div>
-          <!-- Card -->
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 p-4">
-          <!-- Card -->
-          <div class="card">
-
-            <!-- Card image -->
-            <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/gayka/gayka-2.jpg"
-                alt="Card image cap">
-              <a href="projects100/gayka.html" target="_blank">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </div>
-
-            <!-- Card content -->
-            <div class="card-body">
-
-              <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «ГАЙКА» 85,05 M²</h5>
+              <h5 class="card-title">ПРОЕКТ БУДИНКУ «ИОН» 216.56 М²</h5>
             
             </div>
           </div>
@@ -294,16 +125,15 @@ Vue.component("project100", {
         </div>
       
 
-    
         <div class="col-lg-4 col-md-6 col-sm-12 p-4">
           <!-- Card -->
           <div class="card">
 
             <!-- Card image -->
             <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/berry/berry.jpg"
+              <img class="card-img-top" src="../img/home200+/projects300/goliaf/goliaf.jpg"
                 alt="Card image cap">
-              <a href="projects100/berry.html" target="_blank">
+              <a href="../rus/projects300/goliaf.html" target="_blank">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
@@ -312,7 +142,7 @@ Vue.component("project100", {
             <div class="card-body">
 
               <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «БЕРРІ» 69,26 M²</h5>
+              <h5 class="card-title">ПРОЕКТ БУДИНКУ «ГОЛИАФ» 257.72 М²</h5>
             
             </div>
           </div>
@@ -325,9 +155,9 @@ Vue.component("project100", {
 
             <!-- Card image -->
             <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/lui/lui1.jpg"
+              <img class="card-img-top" src="../img/home200+/projects300/fenshui/fenshui.jpg"
                 alt="Card image cap">
-              <a href="projects100/lui.html" target="_blank">
+              <a href="../rus/projects300/fenshui.html" target="_blank">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
@@ -336,7 +166,7 @@ Vue.component("project100", {
             <div class="card-body">
 
               <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «ЛУЇ» 48,81 M²</h5>
+              <h5 class="card-title">ПРОЕКТ «ФЕН-ШУЙ» 282,94 М²</h5>
               
             </div>
           </div>
@@ -349,9 +179,9 @@ Vue.component("project100", {
 
             <!-- Card image -->
             <div class="view overlay">
-              <img class="card-img-top" src="img/home100/projects100/helios2-1/helios2-1.jpg"
+              <img class="card-img-top" src="../img/home200+/projects300/tytan/tytan.jpg"
                 alt="Card image cap">
-              <a href="projects100/helios2.html" target="_blank">
+              <a href="../rus/projects300/tytan.html" target="_blank">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </div>
@@ -360,7 +190,79 @@ Vue.component("project100", {
             <div class="card-body">
 
               <!-- Title -->
-              <h5 class="card-title">ПРОЕКТ «ГЕЛІОС-2» 89,30 M²</h5>
+              <h5 class="card-title">ПРОЕКТ «ТИТАН» 264,18 М²</h5>
+            
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+      
+        <div class="col-lg-4 col-md-6 col-sm-12 p-4">
+          <!-- Card -->
+          <div class="card">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="../img/home200+/projects300/solonka/solonka.jpg"
+                alt="Card image cap">
+              <a href="../rus/projects300/solonka.html" target="_blank">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h5 class="card-title">ПРОЕКТ «СОЛОНКА» 278,52 М²</h5>
+            
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 p-4">
+          <!-- Card -->
+          <div class="card">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="../img/home200+/projects300/savanna/savanna.jpg"
+                alt="Card image cap">
+              <a href="../rus/projects300/savanna.html" target="_blank">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h5 class="card-title">ПРОЕКТ «САВАНА» 276,84 М²</h5>
+              
+            </div>
+          </div>
+          <!-- Card -->
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 p-4">
+          <!-- Card -->
+          <div class="card">
+
+            <!-- Card image -->
+            <div class="view overlay">
+              <img class="card-img-top" src="../img/home200+/projects300/praga/praga.jpg"
+                alt="Card image cap">
+              <a href="../rus/projects300/praga.html" target="_blank">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            <!-- Card content -->
+            <div class="card-body">
+
+              <!-- Title -->
+              <h5 class="card-title">ПРОЕКТ «ПРАГА» 213,81 М²</h5>
             
             </div>
           </div>
@@ -371,7 +273,7 @@ Vue.component("project100", {
   `
   });
   
-  var proj100 = new Vue({
-    el: "#project1",
+  var proj300rus = new Vue({
+    el: "#project3rus",
     data: {}
   });

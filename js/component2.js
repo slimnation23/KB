@@ -1,6 +1,6 @@
 Vue.component("project200", {
     template: `
-    <div class="row text-center">
+    <div class="row text-center fadeIn animated">
         <div class="col-lg-4 col-md-6 col-sm-12 p-4">
           <!-- Card -->
           <div class="card">
