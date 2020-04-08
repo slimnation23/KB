@@ -1,72 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Каркасне Будівництво</title>
-  <link rel="icon" href="https://img.icons8.com/dusk/64/000000/structural.png">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:400,700&display=swap" rel="stylesheet">
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="css/mdb.min.css">
-  <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
-      <a class="navbar-brand mr-5" href="#">
-        <i class="fa fa-home fa-2x brand-header-icon" aria-hidden="true">
-          <span class="ml-1">КБ</span>
-        </i>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#header">Головна<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about-us">Про компанію</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#techno">Технологія</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#project">Проекти</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacts">Контакти</a>
-          </li>
-        </ul>
-
-        <ul class="navbar-nav ml-auto">
-        
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              <img src="img/icons/ukraine.png" alt="ukr">
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="rus/index.html">
-              <img src="img/icons/russia.png" alt="rus">
-            </a>
-          </li>
-        </ul>
-      </div>
-  </nav>
-<!-- Navbar -->
-
-<!-- Carousel -->
+Vue.component("ukr", {
+    template: `
+    
 <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
   
   <div class="carousel-inner" id="header" role="listbox">
@@ -139,9 +73,9 @@
 
   </div>
 </div>
-<!-- Carousel -->
 
-<!-- About company -->
+
+
 <div class="container-fluid" style="background-color: #f7f7f7;">
   <div class="container py-5" id="about-us">
     <h1 class="text-uppercase text-center mb-3">Про компанію</h1>
@@ -179,7 +113,7 @@
     </div>
   </div>
 </div>
-<!-- About company -->
+
 
 <!-- Technology -->
 <div class="container-fluid fixed-bg" style="background-image: url(img/mr-white-pattern.jpg);" id="techno">
@@ -348,64 +282,10 @@
   </div>
 </div>
 <!-- Contact Us -->
-
-<!-- Footer -->
-<footer>
-  <div class="container text-center">
-    <i class="fa fa-home fa-2x brand-header-icon" aria-hidden="true">
-      <span class="ml-1 font-weight-bold">КБ</span>
-      <span class="ml-2">Каркасне Будівництво</span>
-    </i>
-  </div>
-</footer>
-<!-- Footer -->
-
-
-  <!-- jQuery -->
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Vue Js -->
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <!-- Components Content -->
-  <script src="js/component1.js"></script>
-  <script src="js/component2.js"></script>
-  <script src="js/component3.js"></script>
-  <!-- Your custom scripts (optional) -->
-  <script src="js/script.js"></script>
-
-  <!-- Contacts -->
-  <script>
-    document.getElementById('status').innerHTML = "Sending...";
-    formData = {
-      'name'     : $('input[name=name]').val(),
-      'email'    : $('input[name=email]').val(),
-      'subject'  : $('input[name=subject]').val(),
-      'message'  : $('textarea[name=message]').val()
-    };
-
-
-    $.ajax({
-      url : "mail.php",
-      type: "POST",
-      data : formData,
-      success: function(data, textStatus, jqXHR)
-    {
-
-    $('#status').text(data.message);
-    if (data.code) //If mail was sent successfully, reset the form.
-    $('#contact-form').closest('form').find("input[type=text], textarea").val("");
-    },
-    error: function (jqXHR, textStatus, errorThrown)
-    {
-    $('#status').text(jqXHR);
-    }
-    });
-  </script>
-
-</body>
-</html>
+  `
+  });
+  
+  var projUkr = new Vue({
+    el: "#locUkr",
+    data: {}
+  });

@@ -111,6 +111,21 @@ $(".drop-down").click(function(e) {
 });
 // Drop Down
 
+// Drop Up
+$(".drop-up").click(function(e) {
+  let dropDown = $(this).attr("href");
+
+  $("html, body").animate(
+    {
+      scrollTop: $(dropDown).offset().top - headerHeight
+    },
+    100
+  );
+
+  e.preventDefault();
+});
+// Drop Up
+
 // Slider
 $(".carousel").carousel({
   interval: 2500
@@ -135,3 +150,5 @@ function validateForm() {
   document.querySelector('.status').innerHTML = "Sending...";
 }
 // Focus contact
+
+
