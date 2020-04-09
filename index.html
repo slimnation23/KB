@@ -339,11 +339,11 @@
       З вами зв'яжеться наш представник
     </p>
     
-    <form class="form2 text-center" id="contact-form" name="contact-form" action="mail.php" method="POST">
-      <input type="email" class="form2-field" name="email" placeholder="E-Mail" id="inputContact">
-      <button class="btn2 btn2-primary btn2-inside uppercase" onclick="validateForm();">Відправити</button>
+    <form class="form2 text-center" id="mailForm">
+      <input type="email" id="email" class="form2-field" name="email" placeholder="E-Mail">
+      <button type="button" class="btn2 btn2-primary btn2-inside uppercase" id="sendMail">Відправити</button>
     </form>
-    <div class="status"></div>
+    <div id="errorMess"></div>
           
   </div>
 </div>
@@ -360,7 +360,7 @@
 </footer>
 <!-- Footer -->
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -378,34 +378,15 @@
   <!-- Your custom scripts (optional) -->
   <script src="js/script.js"></script>
 
-  <!-- Contacts -->
-  <script>
-    document.getElementById('status').innerHTML = "Sending...";
-    formData = {
-      'name'     : $('input[name=name]').val(),
-      'email'    : $('input[name=email]').val(),
-      'subject'  : $('input[name=subject]').val(),
-      'message'  : $('textarea[name=message]').val()
-    };
-
-
-    $.ajax({
-      url : "mail.php",
-      type: "POST",
-      data : formData,
-      success: function(data, textStatus, jqXHR)
-    {
-
-    $('#status').text(data.message);
-    if (data.code) //If mail was sent successfully, reset the form.
-    $('#contact-form').closest('form').find("input[type=text], textarea").val("");
-    },
-    error: function (jqXHR, textStatus, errorThrown)
-    {
-    $('#status').text(jqXHR);
-    }
-    });
-  </script>
-
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
