@@ -343,7 +343,9 @@
       <input type="email" id="email" class="form2-field" name="email" placeholder="E-Mail">
       <button type="button" class="btn2 btn2-primary btn2-inside uppercase" id="sendMail">Відправити</button>
     </form>
-    <div id="errorMess"></div>
+    
+    <div id="errorMess" class="text-center red-text"></div>
+    
           
   </div>
 </div>
@@ -360,8 +362,8 @@
 </footer>
 <!-- Footer -->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!-- jQuery -->
+  <script src="mail.php"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
@@ -377,16 +379,39 @@
   <script src="js/component3.js"></script>
   <!-- Your custom scripts (optional) -->
   <script src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+   $('#sendMail').on('click', function(){
+  let email = $('#email').val().trim();
+
+  if(email == '') {
+    $('#errorMess').text('Введіть емейл');
+    return false
+  }
+
+  $('#errorMess').text('');
+
+  $.ajax({
+    url: 'mail.php',
+    type: 'POST',
+    cache: false,
+    data: { 'email': email },
+    dataType: 'html',
+    beforeSend: function() {
+      $('#sendMail').prop('disabled', true)
+    },
+    success: function(data) {
+      if (!data)
+      alert('Mistaces');
+      else
+      $('#mailForm').trigger('reset');
+      $('#sendMail').prop('disabled', false);
+      alert('Thank you');
+    }
+  })
+
+})
+</script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-

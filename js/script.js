@@ -152,32 +152,3 @@ function validateForm() {
 // Focus contact
 
 
-$('#sendMail').on('click', function(){
-  let email = $('#email').val().trim();
-
-  if(email == '') {
-    $('#errorMess').text('Введіть емейл');
-    return false
-  }
-
-  $('#errorMess').text('');
-
-  $.ajax({
-    url: 'mail.php',
-    type: 'POST',
-    cache: false,
-    data: { 'email': email },
-    dataType: 'html',
-    beforeSend: function() {
-      $('#sendMail').prop('disabled', true)
-    },
-    success: function(data) {
-      if (!data)
-      alert('Mistaces');
-      else
-      $('#mailForm').trigger('reset')
-      $('#sendMail').prop('disabled', false)
-    }
-  })
-
-})
